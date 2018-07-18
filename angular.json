@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "mmc-breadcrumbs": {
+      "root": "projects/mmc-breadcrumbs",
+      "sourceRoot": "projects/mmc-breadcrumbs/src",
+      "projectType": "library",
+      "prefix": "mmc-breadcrumbs",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/mmc-breadcrumbs/tsconfig.lib.json",
+            "project": "projects/mmc-breadcrumbs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/mmc-breadcrumbs/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mmc-breadcrumbs/src/test.ts",
+            "tsConfig": "projects/mmc-breadcrumbs/tsconfig.spec.json",
+            "karmaConfig": "projects/mmc-breadcrumbs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mmc-breadcrumbs/tsconfig.lib.json",
+              "projects/mmc-breadcrumbs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "mmc-breadcrumbs-library"

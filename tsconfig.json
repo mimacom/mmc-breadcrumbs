@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "mmc-breadcrumbs": [
+        "dist/mmc-breadcrumbs"
+      ],
+      "mmc-breadcrumbs/*": [
+        "dist/mmc-breadcrumbs/*"
+      ]
+    }
   }
 }
