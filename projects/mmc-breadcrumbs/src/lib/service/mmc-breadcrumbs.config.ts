@@ -8,6 +8,6 @@ export interface IPostProcessFunc {
 }
 
 @Injectable()
-export class McBreadcrumbsConfig {
+export class MmcBreadcrumbsConfig {
   postProcess: IPostProcessFunc;
 }
