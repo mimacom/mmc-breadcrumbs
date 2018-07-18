@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {MmcBreadcrumbsService} from './service/mmc-breadcrumbs.service';
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {MmcBreadcrumbsComponent} from './component/mmc-breadcrumbs.component';
-import {McBreadcrumbsConfig} from './service/mmc-breadcrumbs.config';
+import {MmcBreadcrumbsConfig} from './service/mmc-breadcrumbs.config';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
@@ -16,7 +16,7 @@ export class MmcBreadcrumbsModule {
       ngModule: MmcBreadcrumbsModule,
       providers: [
         MmcBreadcrumbsService,
-        McBreadcrumbsConfig
+        MmcBreadcrumbsConfig
       ]
     };
   }

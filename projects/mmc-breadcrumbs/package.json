@@ -1,6 +1,6 @@
 {
   "name": "mmc-breadcrumbs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular 6 routing breadcrumbs based on ngx-breadcrumbs library",
   "license": "MIT",
   "author": "mimacom",

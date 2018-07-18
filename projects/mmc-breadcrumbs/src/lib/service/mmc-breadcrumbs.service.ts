@@ -2,7 +2,7 @@ import {Injectable, Injector} from '@angular/core';
 import {ActivatedRoute, ActivatedRouteSnapshot, NavigationEnd, Router, RouterState} from '@angular/router';
 import {Observable, BehaviorSubject, Subscription, of} from 'rxjs';
 import {IBreadcrumb, stringFormat, wrapIntoObservable} from '../mmc-breadcrumbs.shared';
-import {McBreadcrumbsConfig} from './mmc-breadcrumbs.config';
+import {MmcBreadcrumbsConfig} from './mmc-breadcrumbs.config';
 import {MmcBreadcrumbsResolver} from './mmc-breadcrumbs.resolver';
 import {filter, flatMap, distinct, toArray, first, concat} from 'rxjs/operators';
 
@@ -14,7 +14,7 @@ export class MmcBreadcrumbsService {
   private _breadcrumbs = new BehaviorSubject<IBreadcrumb[]>([]);
   private _defaultResolver = new MmcBreadcrumbsResolver();
 
-  constructor(private _router: Router, route: ActivatedRoute, private _config: McBreadcrumbsConfig, private _injector: Injector) {
+  constructor(private _router: Router, route: ActivatedRoute, private _config: MmcBreadcrumbsConfig, private _injector: Injector) {
 
     this._router.events
       .pipe(filter((x) => x instanceof NavigationEnd))
