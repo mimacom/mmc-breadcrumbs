@@ -10,6 +10,10 @@
     "breadcrumbs",
     "routing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mimacom/mmc-breadcrumbs.git"
+  },
   "peerDependencies": {
     "lodash.template": "4.4.0",
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
