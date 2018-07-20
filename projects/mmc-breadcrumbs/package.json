@@ -3,7 +3,13 @@
   "version": "0.0.2",
   "description": "Angular 6 routing breadcrumbs based on ngx-breadcrumbs library",
   "license": "MIT",
-  "author": "mimacom",
+  "author": {
+    "name": "McNull",
+    "url": "https://github.com/McNull"
+  },
+  "contributors": [
+    "Mimacom"
+  ],
   "keywords": [
     "angular",
     "angular6",
